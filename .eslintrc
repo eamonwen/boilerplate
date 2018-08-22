@@ -1,0 +1,18 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb/base",
+  "env": {
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "plugins": ["react"],
+  "rules": {
+    "comma-dangle": 0,
+    "semi": 0,
+    import/no-extraneous-dependencies: [2, { devDependencies: true }]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "repository": "https://github.com/eamonwen/boilerplate.git",
+  "author": "Eamon Wen <eamonwen@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:js": "eslint './src/**/*.jsx' './src/**/*.js' --config .eslintrc",
+    "lint:css": "stylelint '**/*.scss'"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.10",
+    "style-loader": "^0.22.1",
+    "stylelint": "^9.5.0",
+    "stylelint-config-standard": "^18.2.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  }
+}
